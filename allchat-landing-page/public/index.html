@@ -99,7 +99,7 @@
           <h2 class="section__title">
             More of the features you love<br />less of the hassle you hate
           </h2>
-          <div class="section__grid">
+          <div class="section__grid--two-column">
             <div class="section__card">
               <div class="section__card-container--left">
                 <img
@@ -176,12 +176,14 @@
         </div>
         <!-- End of features section -->
         <!-- Start of dashboard section -->
-        <div class="section section--left-align section--two-column">
+        <div class="section section--left-align section__flexbox">
           <div class="section__column--left">
             <h2 class="section__title section__title--left-align">
               A dashboard for the modern workplace
             </h2>
-            <p class="section__copy section__copy--bottom-pad section__copy--left-align">
+            <p
+              class="section__copy section__copy--bottom-pad section__copy--left-align"
+            >
               We’ve designed a dashboard experience that brings messaging into
               the here and now. No more app switching. No more missed messages.
               Just a clean workspace for all your customer communication.
@@ -189,47 +191,94 @@
             <button class="btn">Request a demo</button>
           </div>
           <div class="section__column--right">
-            <img src="img/dashboard-imac 1.png" alt="iMac with image of app dashboard mockup">
+            <img
+              src="img/dashboard-imac 1.png"
+              alt="iMac with image of app dashboard mockup"
+            />
           </div>
         </div>
         <!-- Start of final cta section -->
         <div class="section section--gray-bg">
-          <h2 class="section__title">Get in touch with our team to try<br>Allchat risk free for 30 days</h2>
+          <h2 class="section__title">
+            Get in touch with our team to try<br />Allchat risk free for 30 days
+          </h2>
           <button class="btn">Request a demo</button>
         </div>
         <!-- End of final cta section -->
       </main>
     </div>
-    <footer class="section section--left-align section__footer">
-      <div class="section__container container--1100px">
+    <footer class="section section__footer">
+      <div class="section__container section--left-align container--1100px">
         <div class="section__column">
-          <img src="img/Allchat logo gray.png" alt="Allchat logo in gray">
-          <p>Customer communication made simple.</p>
+          <img
+            class="section__img--logo"
+            src="img/Allchat logo gray.png"
+            alt="Allchat logo in gray"
+          />
+          <p class="section__copy">Customer communication made simple.</p>
         </div>
         <div class="section__column">
-          <h3 class="section__copy section__copy--title section__copy--white">Address</h3>
-          <p class="section__copy section__copy--body">1234 Main Street<br>Fancy City, CA 99234</p>
-          <h3 class="section__copy section__copy--title section__copy--white">Phone</h3>
-          <p class="section__copy section__copy--body">1 (800) ALL-CHAT</p>
-          <h3 class="section__copy section__copy--title section__copy--white">Email</h3>
-          <p class="section__copy section__copy--body">hello@allchat.com</p>
+          <div class="section__copy-div">
+            <h3 class="section__copy section__copy--title section__copy--white">
+              Address
+            </h3>
+            <p class="section__copy section__copy--body">
+              1234 Main Street<br />Fancy City, CA 99234
+            </p>
+          </div>
+          <div class="section__copy-div">
+            <h3 class="section__copy section__copy--title section__copy--white">
+              Phone
+            </h3>
+            <p class="section__copy section__copy--body">1 (800) ALL-CHAT</p>
+          </div>
+          <div class="section__copy-div">
+            <h3 class="section__copy section__copy--title section__copy--white">
+              Email
+            </h3>
+            <p class="section__copy section__copy--body">hello@allchat.com</p>
+          </div>
         </div>
         <div class="section__column section__column--flex">
-          <h3 class="section__copy section__copy--title section__copy--white">Social</h3>
-          <a href="#">Facebook</a>
-          <a href="#">Instagram</a>
-          <a href="#">YouTube</a>
+          <h3 class="section__copy section__copy--title section__copy--white">
+            Social
+          </h3>
+          <a class="section__copy--link" href="#">Facebook</a>
+          <a class="section__copy--link" href="#">Instagram</a>
+          <a class="section__copy--link" href="#">YouTube</a>
         </div>
         <div class="section__column section__column--flex">
-          <h3 class="section__copy section__copy--title section__copy--white">Subscribe to our email list</h3>
+          <h3 class="section__copy section__copy--title section__copy--white">
+            Subscribe to our email list
+          </h3>
           <form class="section__column--flex" action="GET">
-          <label for="name">Name:</label>
-          <input type="text" value="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" value="email" name="email">
+            <label
+              class="section__copy section__copy--label section__copy--white"
+              for="name"
+              >Name:</label
+            >
+            <input
+              class="section__input"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+            <label
+              class="section__copy section__copy--label section__copy--white"
+              for="email"
+              >Email:</label
+            >
+            <input
+              class="section__input"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <button class="btn">Subscribe</button>
           </form>
         </div>
       </div>
+      <p class="copyright section__copy--body section__copy--bottom-pad">&#169; 2020 All Chat App, LLC - All Rights Reserved</p>
     </footer>
     <script src="/js/dist/main.js"></script>
   </body>
