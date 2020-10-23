@@ -170,7 +170,6 @@ header {
   width: 100%;
   top: 0;
   padding: 17px 0;
-  border-bottom: 1px solid #cdcdcd;
 }
 .nav {
   display: flex;
@@ -216,13 +215,17 @@ button,
   font-family: "PT Sans";
   font-weight: 600;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 15px 40px;
 }
-button:active {
+.btn:active {
   outline: none;
   border: none;
 }
-button:focus {
+.btn:hover {
+    text-decoration: none;
+}
+.btn:focus {
   outline: none;
   border: none;
 }
@@ -255,7 +258,7 @@ button:focus {
 .section__container {
   display: grid;
   grid-gap: 79px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 60px 0;
 }
 .section__column--flex {
@@ -357,6 +360,9 @@ button:focus {
 .section__input::placeholder {
   color: #cdcdcd;
 }
+input[type=password]::placeholder {
+    letter-spacing: 2px;
+  }
 .section__input:focus {
   outline: none;
   border: 1px solid #2dc6ab;
