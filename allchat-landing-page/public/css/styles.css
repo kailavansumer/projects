@@ -186,6 +186,7 @@ a {
   font-weight: 600;
   color: #333;
 }
+button,
 .btn {
   display: inline-block;
   background: rgba(43, 187, 162, 1);
@@ -202,6 +203,14 @@ a {
   text-transform: uppercase;
   padding: 15px 40px;
 }
+button:active {
+  outline: none;
+  border: none;
+}
+button:focus {
+    outline: none;
+    border: none;
+  }
 .hero {
   display: flex;
   justify-content: space-between;
@@ -311,15 +320,20 @@ a {
   padding-bottom: 15px;
 }
 .section__input {
-    border: none;
-    border-radius: 4px;
-    padding: 16px 45px 16px 8px;
-    margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 16px 45px 16px 8px;
+  margin-bottom: 15px;
+  transition: border 0.2s;
 }
 .section__input::placeholder {
-    color: #cdcdcd;
+  color: #cdcdcd;
+}
+.section__input:focus {
+  outline: none;
+  border: 1px solid #2dc6ab;
 }
 .copyright {
-    color: #fff;
-    opacity: .3;
+  color: #fff;
+  opacity: 0.3;
 }
