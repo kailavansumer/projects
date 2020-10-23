@@ -246,14 +246,13 @@ html {
     text-align: left;
     margin-left: 40px;
 }
-.section__card-text {
+.section__copy {
     font-size: 1.6rem;
 }
-.section__card-text--title {
+.section__copy--title {
     font-weight: 600;   
     text-transform: uppercase;
 }
-.section__card-text--copy {
+.section__copy--body {
     padding: 5px 0 0 0;
-
 }
