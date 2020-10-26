@@ -45,7 +45,7 @@
   }
 
   .section {
-    margin: 30px 0;
+    margin: 30px 0 0;
   }
   .section__card {
     padding: 30px 25px;
@@ -63,6 +63,9 @@
   }
   .section__title {
     font-size: 2.2rem;
+  }
+  .section__subtitle {
+    font-size: 1.6rem;
   }
   .section__grid--two-column {
     grid-template-columns: 1fr;
@@ -86,5 +89,21 @@
 
   .section__copy-div--last {
     padding-bottom: 0;
+  }
+}
+
+/* Galaxy Fold and extra small screens */
+@media only screen and (max-width: 320px) {
+  .hero__title {
+    font-size: 3.4rem;
+  }
+
+  .hero__subtitle,
+  .section__title {
+    font-size: 1.6rem;
+  }
+
+  .section__column--left {
+    padding: 0 15px;
   }
 }
