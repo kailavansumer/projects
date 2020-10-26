@@ -181,7 +181,7 @@ header {
   justify-content: space-between;
 }
 .nav__container--hidden {
-    display: none;
+  display: none;
 }
 a {
   font-size: 1.6rem;
@@ -223,7 +223,7 @@ button,
   border: none;
 }
 .btn:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 .btn:focus {
   outline: none;
@@ -249,7 +249,7 @@ button,
   padding: 10px 0 30px;
 }
 .section__subtitle {
-    padding-top: 0;
+  padding-top: 0;
 }
 .section {
   margin: 85px auto;
@@ -360,9 +360,9 @@ button,
 .section__input::placeholder {
   color: #cdcdcd;
 }
-input[type=password]::placeholder {
-    letter-spacing: 2px;
-  }
+input[type="password"]::placeholder {
+  letter-spacing: 2px;
+}
 .section__input:focus {
   outline: none;
   border: 1px solid #2dc6ab;
@@ -370,4 +370,5 @@ input[type=password]::placeholder {
 .copyright {
   color: #fff;
   opacity: 0.3;
+  padding-top: 30px;
 }
