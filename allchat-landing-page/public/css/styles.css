@@ -203,6 +203,7 @@ a:hover {
 button,
 .btn {
   display: inline-block;
+  cursor: pointer;
   background: rgba(43, 187, 162, 1);
   background: linear-gradient(
     135deg,
@@ -285,6 +286,7 @@ button,
 }
 .section--left-align,
 .section__title--left-align,
+.section__subtitle--left-align,
 .section__copy--left-align {
   text-align: left;
 }
@@ -311,6 +313,10 @@ button,
   text-align: left;
   margin-left: 40px;
 }
+.section__card-container--left {
+  display: flex;
+  align-items: center;
+}
 .section__copy {
   font-size: 1.6rem;
   line-height: 1.4;
@@ -331,6 +337,67 @@ button,
 }
 .section__column--left {
   padding: 150px 0 0 100px;
+}
+.section__form,
+.section__div--top-pad {
+  padding-top: 30px;
+}
+.section__form-div {
+  padding: 15px 0;
+}
+.section__form-radio {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.section__form-radio > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.section__form-radio--custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.section__form-radio:hover input ~ .section__form-radio--custom {
+  background-color: #ccc;
+  transition: all 0.5s;
+}
+.section__form-radio input:checked ~ .section__form-radio--custom {
+  background-color: #2dc6ab;
+}
+.section__form-radio--custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.section__form-radio input:checked ~ .section__form-radio--custom:after {
+  display: block;
+}
+.section__form-radio .section__form-radio--custom:after {
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .section__footer {
   font-size: 1.6rem;

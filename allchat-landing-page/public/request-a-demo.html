@@ -85,47 +85,88 @@
     </header>
     <!-- End of header section -->
     <main class="container--1100px">
-      <div class="section">
-        <h3 class="section__title">Welcome back!</h3>
-        <form
-          class="container--300px section__column--bottom-pad section__column--flex section--left-align"
-          action="GET"
-        >
-          <label class="section__copy section__copy--label" for="email"
-            >Email:</label
+      <div class="section section__left-align section__flexbox">
+        <div class="section__div--top-pad">
+          <h3 class="section__title section__title--left-align">
+            Request a Demo
+          </h3>
+          <p class="section__copy section__copy--left-align">
+            Submit your information using the request form below and someone
+            from our team will reach out to you shortly.
+          </p>
+          <form
+            class="section__form section__column--bottom-pad section__column--flex section--left-align"
+            action="GET"
           >
-          <input
-            class="section__input section__input--outlined"
-            type="email"
-            name="email"
-            placeholder="Enter your email"
+            <label class="section__copy section__copy--label" for="name"
+              >Name:</label
+            >
+            <input
+              class="section__input section__input--outlined"
+              type="text"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+            <label class="section__copy section__copy--label" for="email"
+              >Email:</label
+            >
+            <input
+              class="section__input section__input--outlined"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              id="email"
+              required
+            />
+            <label class="section__copy section__copy--label" for="phone"
+              >Phone:</label
+            >
+            <input
+              class="section__input section__input--outlined"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="000-000-0000"
+              required
+            />
+            <label class="section__copy section__copy--label" for="company-size"
+              >Company Size:</label
+            >
+            <div class="section__form-div">
+              <label class="section__form-radio" for="small"
+                >1-5 <input type="radio" id="small" name="company-size" /><span
+                  class="section__form-radio--custom"
+                ></span
+              ></label>
+              <label class="section__form-radio" for="medium"
+                >6-25<input type="radio" id="medium" name="company-size" />
+                <span class="section__form-radio--custom"></span>
+              </label>
+              <label class="section__form-radio" for="large"
+                >26-500
+                <input type="radio" id="large" name="company-size" /><span
+                  class="section__form-radio--custom"
+                ></span
+              ></label>
+              <label class="section__form-radio" for="xlarge"
+                >500+
+                <input type="radio" id="xlarge" name="company-size" /><span
+                  class="section__form-radio--custom"
+                ></span
+              ></label>
+            </div>
+            <button class="btn">Submit Request</button>
+          </form>
+        </div>
+        <div>
+          <img
+            src="img/dashboard-imac 1.png"
+            alt="iMac with image of app dashboard mockup"
           />
-          <label class="section__copy section__copy--label" for="password"
-            >Password:</label
-          >
-          <input
-            class="section__input section__input--outlined"
-            type="password"
-            name="password"
-            placeholder="••••••••"
-            id="password"
-          />
-          <button class="btn">Sign in</button>
-        </form>
-        <a href="#">Forgot your password?</a>
+        </div>
       </div>
       <!-- End of sign in form section -->
-      <!-- Start of final cta section -->
-      <div class="section section--gray-bg">
-        <h2 class="section__title section__title--no-pad">
-          Don't have an account?
-        </h2>
-        <p class="section__subtitle">
-          Get in touch with our team to get started.
-        </p>
-        <a href="request-a-demo.html" class="btn">Request a demo</a>
-      </div>
-      <!-- End of final cta section -->
     </main>
     <!-- Start of footer section -->
     <footer class="section section__footer">
