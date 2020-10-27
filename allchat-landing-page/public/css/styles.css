@@ -222,14 +222,15 @@ button,
   box-shadow: 1px 1px 3px #cecece;
   transition: all 0.2s;
 }
-.btn:active {
-  outline: none;
-  border: none;
-}
 .btn:hover {
   text-decoration: none;
   transform: translate(-1px, -1px);
   box-shadow: 1px 1px 6px #cecece;
+}
+.btn:active {
+  outline: none;
+  border: none;
+  transform: translate(1px, 1px);
 }
 .btn:focus {
   outline: none;
