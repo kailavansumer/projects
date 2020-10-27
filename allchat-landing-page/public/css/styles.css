@@ -219,6 +219,8 @@ button,
   text-transform: uppercase;
   text-decoration: none;
   padding: 15px 40px;
+  box-shadow: 1px 1px 3px #cecece;
+  transition: all 0.2s;
 }
 .btn:active {
   outline: none;
@@ -226,6 +228,8 @@ button,
 }
 .btn:hover {
   text-decoration: none;
+  transform: translate(-1px, -1px);
+  box-shadow: 1px 1px 6px #cecece;
 }
 .btn:focus {
   outline: none;
