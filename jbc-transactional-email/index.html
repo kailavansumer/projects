@@ -4,9 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 600px;
+        }
+        .address-row .left-column,
+        .address-row .right-column {
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+        .container {
+          width: 375px;
+        }
+      }
+    </style>
   </head>
   <body
-    style="background: #e5e5e5; font-family: Helvetica Neue, Arial, sans-serif"
+    style="
+      background: #e5e5e5;
+      font-family: Helvetica Neue, Arial, sans-serif;
+      margin: 0;
+    "
   >
     <!-- Start of email -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -261,7 +282,7 @@
                 <!-- end of order details table -->
               </td>
             </tr>
-            <tr class="address-row" style="margin: 30px 0">
+            <tr class="address-row">
               <td style="padding: 30px 45px 0">
                 <table
                   class="left-column"
