@@ -70,9 +70,9 @@ h2 {
   display: inline-block;
   background: linear-gradient(120deg, #67fdfe, #33149a);
   margin: 0 10px;
-  width: 240px;
+  width: 250px;
   height: 55px;
-  padding: 17px 50px 14px;
+  padding: 17px 20px 14px;
   border: none;
   border-radius: 0px;
   text-align: center;
@@ -96,7 +96,7 @@ h2 {
   border: 2px solid #33149a;
   border-collapse: collapse;
   color: #33149a;
-  width: 240px;
+  width: 250px;
   height: 55px;
   padding: 15px 50px;
 }
@@ -149,6 +149,17 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 }
+.section__div--flex {
+  display: flex;
+  align-items: center;
+  padding: 0 160px;
+}
+.section__div--flex div {
+  font-size: 1.8rem;
+}
+.section__div--flex div {
+  padding-left: 30px;
+}
 .section__card--sm {
   flex-direction: column;
   margin: 0;
@@ -169,4 +180,21 @@ h3 {
   color: #33149a;
   font-weight: 600;
   margin-top: 20px;
+}
+.about-heading-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.about-heading-div h4 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 0;
+  vertical-align: baseline;
+}
+.about-heading-div img {
+  width: 30px;
+  height: auto;
+  padding: 0;
+  margin-left: 10px;
 }
