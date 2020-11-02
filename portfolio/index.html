@@ -17,22 +17,30 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="container">
-          <a href="index.html"
-            ><img src="img/kaila-logo.png" alt="Logo" height="30px"
-          /></a>
-          <nav>
-            <ul>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="img/kaila-logo.png"
+            alt="Logo"
+            height="30px" /><img
+            class="logo-white"
+            src="img/kaila-logo-white.png"
+            alt="Logo"
+            height="30px"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
+    <header>
       <div class="container hero">
         <h1>Kaila VanSumer</h1>
         <h2>UX/UI Designer & Front-End Developer</h2>
@@ -116,8 +124,8 @@
               <h5>Development Tools</h5>
               <ul>
                 <li>HTML/CSS</li>
-                <li>Sass</li>
-                <li>Javascript</li>
+                <li>Bootstrap</li>
+                <li>JQuery</li>
                 <li>VS Code</li>
                 <li>Github</li>
                 <li>Terminal</li>
@@ -141,53 +149,63 @@
       </div>
       <!-- end of skills section -->
       <!-- start of about section -->
-        <div id="about" class="section section--white">
-          <div class="container">
-            <h3 class="section__title">About</h3>
-            <div class="section__div--flex">
-              <img src="img/profile.png" alt="Profile picture" />
-              <div class="about-div">
-                <div class="about-heading-div">
-                  <h4>Hi, I'm Kaila</h4>
-                  <img src="img/waving-icon.png" alt="" />
-                </div>
-                <div class="about-text-div">
-                  <p>
-                    I help entrepreneurs and businesses improve their customer
-                    experience and make more money by designing & building
-                    responsive, mobile-friendly, user-centered websites.
-                  </p>
-                  <p>
-                    I’ve worked as the sole UX/UI Designer on an agile dev team
-                    for a small eCommerce company, and now I’m looking for a new
-                    full time opportunity. If you think I would be a good fit
-                    for your team or want to work together on your next project,
-                    please reach out using the contact form below.
-                  </p>
-                  <a href="#contact" class="btn btn--top-margin">Let's Work Together</a>
-                </div>
+      <div id="about" class="section section--white">
+        <div class="container">
+          <h3 class="section__title">About</h3>
+          <div class="section__div--flex">
+            <img src="img/profile.png" alt="Profile picture" />
+            <div class="about-div">
+              <div class="about-heading-div">
+                <h4>Hi, I'm Kaila</h4>
+                <img src="img/waving-icon.png" alt="" />
+              </div>
+              <div class="about-text-div">
+                <p>
+                  I help entrepreneurs and businesses improve their customer
+                  experience and make more money by designing & building
+                  responsive, mobile-friendly, user-centered websites.
+                </p>
+                <p>
+                  Most recently, I worked as the sole UX/UI Designer on an agile
+                  dev team for a small eCommerce company, and I’m currently
+                  looking for a new full time opportunity. If you think I would
+                  be a good fit for your team or want to work together on your
+                  next project, please reach out using the contact form below.
+                </p>
+                <a href="#contact" class="btn btn--top-margin"
+                  >Let's Work Together</a
+                >
               </div>
             </div>
           </div>
         </div>
-        <!-- end of about section -->
-        <!-- start of contact section -->
-        <div id="contact" class="section">
-          <div class="container">
-            <h3 class="section__title">Contact</h3>
-            <div class="form-div">
-              <form action="GET">
-                <label for="name">Name:</label>
-                <input type="text" placeholder="Enter your name" name="name">
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Enter your email" name="email">
-                <label for="message">Message:</label>
-                <input type="text" placeholder="Let me know how I can help..." name="message">
-              </form>
-            </div>
+      </div>
+      <!-- end of about section -->
+      <!-- start of contact section -->
+      <div id="contact" class="section">
+        <div class="container">
+          <h3 class="section__title">Contact</h3>
+          <div class="form-div">
+            <form action="GET">
+              <label for="name">Name:</label>
+              <input type="text" name="name" />
+              <label for="email">Email:</label>
+              <input type="email" name="email" />
+              <label for="message">Message:</label>
+              <textarea
+                type="text"
+                placeholder="Let me know how I can help..."
+                name="message"
+              >
+              </textarea>
+              <button class="btn btn--top-margin" type="submit">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
+      <!-- end of contact section -->
     </main>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -204,5 +222,15 @@
       integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          $("div.navbar").addClass("scrolled");
+        } else {
+          $("div.navbar").removeClass("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
