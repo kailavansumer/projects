@@ -106,7 +106,7 @@ h2 {
 }
 
 .section {
-  padding: 60px 0;
+  padding: 60px 0 120px;
 }
 .section--white {
   background: white;
@@ -197,4 +197,11 @@ h3 {
   height: auto;
   padding: 0;
   margin-left: 10px;
+}
+.form-div {
+  margin: 0 250px;
+}
+.form-div form {
+  display: flex;
+  flex-direction: column;
 }
