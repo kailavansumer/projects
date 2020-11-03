@@ -246,11 +246,18 @@ label {
 input {
   border: none;
   padding: 15px 8px;
+  border-radius: 1px;
 }
 textarea {
   border: none;
   min-height: 250px;
   margin-bottom: 15px;
+  border-radius: 1px;
+}
+
+input:focus,
+textarea:focus {
+  outline-color: var(--purple) !important;
 }
 footer {
   padding: 30px 0;
@@ -288,5 +295,5 @@ footer {
 .copyright-container p {
   color: #777;
   font-size: 1.4rem;
-  margin: 0 0 5pxgit statu;
+  margin: 0 0 5px;
 }
