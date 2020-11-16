@@ -20,6 +20,26 @@
     display: flex;
     flex-wrap: wrap;
   }
+  .section__div--flex {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+  }
+  .section__div--flex > img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .section__div--flex div {
+    padding: 0;
+  }
+  .about-heading-div {
+    justify-content: center;
+  }
+  .about-text-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media only screen and (max-width: 768px) {
 }
