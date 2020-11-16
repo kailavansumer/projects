@@ -46,6 +46,9 @@
   .section__card img {
     width: 100%;
   }
+  .section__card--sm ul li {
+    font-size: 1.6rem;
+  }
   #skills .grid {
     display: flex;
     flex-wrap: wrap;
