@@ -40,6 +40,12 @@
     flex-direction: column;
     align-items: center;
   }
+  .form-div {
+    margin: 0;
+  }
+  form > .btn {
+    margin: 10px auto 0;
+  }
 }
 @media only screen and (max-width: 768px) {
 }
