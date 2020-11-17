@@ -8,6 +8,38 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @media screen and (min-width: 600px) {
+        .container {
+          width: 600px;
+        }
+      }
+      @media screen and (max-width: 599px) {
+        .container {
+          width: 100% !important;
+        }
+        .contain {
+          width: 50%;
+        }
+        .responsive {
+          width: 100%;
+        }
+        .left-column,
+        .right-column {
+          width: 10%;
+        }
+        .middle-column {
+          width: 80%;
+        }
+        .hero-row td h1 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .icon {
+          width: 10%;
+        }
+      }
+    </style>
   </head>
   <body
     style="
@@ -23,7 +55,6 @@
           <!-- start of main table -->
           <table
             class="container"
-            width="600px"
             align="center"
             border="0"
             cellspacing="0"
@@ -44,6 +75,7 @@
             <!-- start of hero row -->
             <tr class="hero-row">
               <td
+                class="contain"
                 width="600px"
                 height="400px"
                 align="center"
@@ -54,12 +86,13 @@
                     color: #fff;
                     font-size: 68px;
                     font-weight: bold;
-                    padding: 0 100px;
+                    padding: 0 45px;
                   "
                 >
                   Shared values,<br />not share value
                 </h1>
                 <table
+                  class="responsive"
                   width="500px"
                   align="center"
                   border="0"
@@ -69,6 +102,7 @@
                 >
                   <tr>
                     <td
+                      class="responsive"
                       align="center"
                       height="300px"
                       width="500px"
@@ -107,7 +141,11 @@
             <!-- start of purpose-profit row -->
             <tr class="purpose-profit-row">
               <td>
-                <img src="https://i.imgur.com/1FHiu2d.png" alt="" />
+                <img
+                  class="responsive"
+                  src="https://i.imgur.com/1FHiu2d.png"
+                  alt=""
+                />
                 <table
                   align="center"
                   border="0"
@@ -136,7 +174,7 @@
                           font-size: 48px;
                           color: #46522b;
                           font-weight: 900;
-                          padding: 0 80px;
+                          padding: 0 30px;
                           margin: 0 0 30px;
                         "
                       >
@@ -181,7 +219,11 @@
             <!-- start of gear row -->
             <tr class="gear-row">
               <td>
-                <img src="https://i.imgur.com/SfHCUfZ.png" alt="" />
+                <img
+                  class="responsive"
+                  src="https://i.imgur.com/SfHCUfZ.png"
+                  alt=""
+                />
                 <table
                   align="center"
                   border="0"
@@ -255,7 +297,11 @@
             <!-- start of expert row -->
             <tr class="expert-row">
               <td>
-                <img src="https://i.imgur.com/6zkOct9.png" alt="" />
+                <img
+                  class="responsive"
+                  src="https://i.imgur.com/6zkOct9.png"
+                  alt=""
+                />
                 <table
                   align="center"
                   border="0"
@@ -330,7 +376,11 @@
             <!-- start of no-trace row -->
             <tr class="no-trace-row">
               <td>
-                <img src="https://i.imgur.com/5aFNRdH.png" alt="" />
+                <img
+                  class="responsive"
+                  src="https://i.imgur.com/5aFNRdH.png"
+                  alt=""
+                />
                 <table
                   align="center"
                   border="0"
@@ -403,6 +453,7 @@
             <!-- end of no-trace row -->
             <tr class="filler-row">
               <td
+                class="responsive"
                 align="center"
                 height="60px"
                 width="600px"
@@ -507,19 +558,19 @@
                   style="padding: 30px; margin: 20px 0"
                 >
                   <tr>
-                    <td class="twitter-icon" align="center" width="60px">
+                    <td class="icon twitter-icon" align="center" width="60px">
                       <img src="https://i.imgur.com/LfwIOOC.png" alt="" />
                     </td>
-                    <td class="facebook-icon" align="center" width="60px">
+                    <td class="icon facebook-icon" align="center" width="60px">
                       <img src="https://i.imgur.com/Rsx6ExM.png" alt="" />
                     </td>
-                    <td class="pinterest-icon" align="center" width="60px">
+                    <td class="icon pinterest-icon" align="center" width="60px">
                       <img src="https://i.imgur.com/R7HAXLY.png" alt="" />
                     </td>
-                    <td class="youtube-icon" align="center" width="60px">
+                    <td class="icon youtube-icon" align="center" width="60px">
                       <img src="https://i.imgur.com/NFrr0lo.png" alt="" />
                     </td>
-                    <td class="instagram-icon" align="center" width="60px">
+                    <td class="icon instagram-icon" align="center" width="60px">
                       <img src="https://i.imgur.com/JAKzcrJ.png" alt="" />
                     </td>
                   </tr>

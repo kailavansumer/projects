@@ -49,6 +49,12 @@
   .section__card--sm ul li {
     font-size: 1.6rem;
   }
+  .labels {
+    justify-content: space-around;
+  }
+  .section__card .labels p {
+    padding: 0;
+  }
   #skills .grid {
     display: flex;
     flex-wrap: wrap;
@@ -83,4 +89,7 @@
 @media only screen and (max-width: 768px) {
 }
 @media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
 }
