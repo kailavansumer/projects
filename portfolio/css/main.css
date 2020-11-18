@@ -9,7 +9,7 @@ html {
 }
 :root {
   --light-blue: #67fdfe;
-  --purple: #33149a;
+  --pink: #ff2f7a;
   --dark-blue: #202e53;
   --dark-gray: #222222;
   --light-gray: #f6f6f8;
@@ -36,6 +36,11 @@ header {
 button.navbar-toggler {
   outline: none;
 }
+img.logo,
+img.logo-white {
+  width: 82.5px;
+  height: 33.5px;
+}
 img.logo-white {
   display: none;
 }
@@ -43,7 +48,7 @@ div.scrolled {
   position: sticky;
   top: 0;
   margin-bottom: 30px;
-  background: var(--purple);
+  background: var(--pink);
 }
 div.scrolled nav ul li a {
   color: white;
@@ -107,7 +112,7 @@ h2 {
 }
 .btn {
   display: inline-block;
-  background: linear-gradient(120deg, var(--light-blue), var(--purple));
+  background: linear-gradient(120deg, var(--light-blue), var(--pink));
   margin: 0 10px;
   width: 250px;
   height: 55px;
@@ -126,6 +131,10 @@ h2 {
 .btn:focus {
   box-shadow: none;
 }
+.btn:hover {
+  box-shadow: 4px 4px 6px #bdbdbd;
+  transition: all 0.3s;
+}
 .btn--top-margin {
   margin: 15px 0 0 0;
 }
@@ -135,15 +144,15 @@ h2 {
 }
 .btn--outline {
   background: var(--light-gray);
-  border: 2px solid var(--purple);
+  border: 2px solid var(--pink);
   border-collapse: collapse;
-  color: var(--purple);
+  color: var(--pink);
   width: 250px;
   height: 55px;
   padding: 15px 50px;
 }
 .btn--outline:hover {
-  color: var(--purple);
+  color: var(--pink);
   text-decoration: none;
 }
 
@@ -228,7 +237,7 @@ h3 {
 .section__card h5 {
   text-transform: uppercase;
   font-size: 1.8rem;
-  color: var(--purple);
+  color: var(--pink);
   font-weight: 600;
   margin-top: 20px;
 }
@@ -260,15 +269,19 @@ label {
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
-  color: var(--purple);
+  color: var(--pink);
   margin: 15px 0 0;
 }
 input {
+  display: block;
+  width: 100%;
   border: none;
   padding: 15px 8px;
   border-radius: 1px;
 }
 textarea {
+  display: block;
+  width: 100%;
   border: none;
   min-height: 250px;
   margin-bottom: 15px;
@@ -277,7 +290,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline-color: var(--purple) !important;
+  outline-color: var(--pink) !important;
 }
 footer {
   padding: 30px 0;
