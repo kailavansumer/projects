@@ -86,3 +86,54 @@ multi
 lines`;
 console.log(multiLine);
 */
+
+/*
+// if/else statements
+
+const age = 15;
+
+if (age >= 18) {
+  console.log("Sarah can start her driving license 🚗");
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years.`);
+}
+
+const birthYear = 2012;
+
+//if/else control statements
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
+*/
+
+/*
+//Code Challenge #2
+var massMark = 82;
+var massJohn = 82;
+var heightMark = 1.7;
+var heightJohn = 1.7;
+
+var bmiMark = (massMark / heightMark) ^ 2;
+var bmiJohn = (massJohn / heightJohn) ^ 2;
+
+if (bmiMark > bmiJohn) {
+  console.log(`Mark's BMI (${bmiMark}) is higher than John's (${bmiJohn})!`);
+} else if (bmiJohn > bmiMark) {
+  console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMark})!`);
+} else {
+  console.log(
+    `Mark's BMI (${bmiMark}) and John's BMI (${bmiJohn}) are the same.`
+  );
+}
+
+*/
+
+//Type conversion (explicit change) and coercion
+
+const inputYear = "1991";
+console.log(inputYear + 18);
