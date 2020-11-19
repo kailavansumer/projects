@@ -199,3 +199,72 @@ if (favorite !== 23) {
 }
 
 */
+
+/*
+//logical operators
+
+const hasDriverLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+
+const shouldDrive = hasDriverLicense && hasGoodVision;
+
+// if (shouldDrive) {
+//   console.log(`Sarah is able to drive.`);
+// } else {
+//   console.log(`Someone else should drive...`);
+// }
+
+const isTired = false;
+console.log(hasGoodVision && hasDriverLicense && isTired);
+
+if (hasGoodVision && hasDriverLicense && !isTired) {
+  console.log(`Sarah is able to drive.`);
+} else {
+  console.log(`Someone else should drive...`);
+}
+*/
+/*
+//Code Challenge #3
+
+let dolphinScoreAverage = (96 + 108 + 89) / 3;
+let koalasScoreAverage = (88 + 91 + 110) / 3;
+
+if (dolphinScoreAverage > koalasScoreAverage) {
+  console.log(
+    `The Dolphins won the competition with an average score of ${dolphinScoreAverage}!`
+  );
+} else if (dolphinScoreAverage < koalasScoreAverage) {
+  console.log(
+    `The Koalas won the competition with an average score of ${koalasScoreAverage}!`
+  );
+} else if (dolphinScoreAverage === koalasScoreAverage) {
+  console.log(`It was a tie.`);
+}
+
+dolphinScoreAverage = (109 + 95 + 90) / 3;
+koalasScoreAverage = (109 + 95 + 90) / 3;
+
+if (dolphinScoreAverage > koalasScoreAverage && dolphinScoreAverage > 100) {
+  console.log(
+    `The Dolphins won the competition with an average score of ${dolphinScoreAverage}!`
+  );
+} else if (
+  dolphinScoreAverage < koalasScoreAverage &&
+  koalasScoreAverage > 100
+) {
+  console.log(
+    `The Koalas won the competition with an average score of ${koalasScoreAverage}!`
+  );
+} else if (
+  dolphinScoreAverage === koalasScoreAverage &&
+  dolphinScoreAverage > 100 &&
+  koalasScoreAverage > 100
+) {
+  console.log(`It was a tie and both teams had sufficient points.`);
+} else {
+  console.log(`Neither team had enough points to win.`);
+}
+*/
