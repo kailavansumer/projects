@@ -133,6 +133,7 @@ if (bmiMark > bmiJohn) {
 
 */
 
+/*
 //Type conversion (explicit change) and coercion (automatically done by js)
 
 const inputYear = "1991";
@@ -146,5 +147,55 @@ console.log(String(23), 23);
 
 console.log("I am " + 23 + " years old");
 console.log("23" - "10" - 3);
+*/
 
+/*
 // Truthy and falsey values
+//Falsey values: 0, '', undefined, null, and NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+
+const money = 0;
+
+if (money) {
+  console.log(`Don't spend it all`);
+} else {
+  console.log(`You should get a job.`);
+}
+
+let height;
+
+if (height) {
+  console.log(`Height is defined`);
+} else {
+  console.log(`Height is undefined`);
+}
+
+*/
+
+/*
+// Equality operators
+
+const age = "18";
+
+if (age === 18) console.log(`You just became an adult! (strict)`);
+
+if (age == 18) console.log(`You just became an adult! (loose)`);
+
+const favorite = Number(prompt("what's your favorite number?"));
+console.log(favorite);
+
+if (favorite === 23) {
+  console.log(`Cool! ${favorite} is a great number.`);
+} else if (favorite === 22) {
+  console.log(`${favorite} is alright, but 23 is better.`);
+}
+
+if (favorite !== 23) {
+  console.log(`Why isn't 23 your favorite number?`);
+}
+
+*/
