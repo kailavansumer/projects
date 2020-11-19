@@ -268,3 +268,65 @@ if (dolphinScoreAverage > koalasScoreAverage && dolphinScoreAverage > 100) {
   console.log(`Neither team had enough points to win.`);
 }
 */
+
+// const day = prompt(`What day is it?`);
+
+// switch (day) {
+//   case "monday":
+//     console.log(`Plan courses`);
+//     console.log(`Go to coding meetup`);
+//     break;
+//   case "tuesday":
+//     console.log(`Prepare theory video`);
+//     break;
+//   case "wednesday":
+//   case "thursday":
+//     console.log(`Write code examples`);
+//     break;
+//   case "friday":
+//     console.log(`Record videos`);
+//     break;
+//   case "saturday":
+//   case "sunday":
+//     console.log(`Enjoy the weekend`);
+//     break;
+//   default:
+//     console.log(`Not a valid day`);
+// }
+/*
+if (day === "monday") {
+  console.log(`Plan courses`);
+  console.log(`Go to coding meetup`);
+} else if (day === "tuesday") {
+  console.log(`Prepare theory video`);
+} else if (day === "wednesday" || day === "thursday") {
+  console.log(`Write code examples`);
+} else if (day === "friday") {
+  console.log(`Record videos`);
+} else if (day === "saturday" || day === "sunday") {
+  console.log(`Enjoy the weekend`);
+} else {
+  console.log(`Not a valid day`);
+}
+*/
+
+/*
+
+//Conditional/Ternary operators
+const age = prompt(`What is your age?`);
+
+age >= 18 ? console.log(`I drink wine 🍷`) : console.log(`I drink water 💦`);
+
+const drink = age >= 18 ? "wine 🍷" : "water 💦";
+console.log(drink);
+
+console.log(`I like to drink ${drink}`);
+*/
+
+const bill = prompt(`How much did you pay for your meal?`);
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+const total = Number(bill) + Number(tip);
+console.log(
+  `The bill was ${bill}, the tip was ${tip}, and the total value was ${total}`
+);
