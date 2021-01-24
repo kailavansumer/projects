@@ -71,16 +71,17 @@ span {
   padding: 0.5rem 3.2rem;
 }
 
-.nav-link-container,
-.articles,
-.bottom-nav-link-container {
+.nav-link-container {
   padding: 1rem 2.6rem 1rem 0;
 }
-
-.nav-link,
-.fa-newspaper,
-.fa-bookmark {
+.bottom-nav-link-container {
+  padding: 1rem 0 1rem 0;
+}
+.nav-link {
   padding-right: 0.8rem;
+}
+.bottom-nav-link-container .nav-link {
+  padding: 0 0.8rem;
 }
 .search-bar {
   position: relative;
@@ -102,7 +103,7 @@ input:focus {
   outline: none;
 }
 
-.fa-search {
+.fa-search-light {
   position: absolute;
   left: 100%;
   top: 50%;
@@ -123,4 +124,57 @@ button {
   border: 0.1rem solid var(--dark-gray);
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.menu,
+.fas-search-dark {
+  display: none;
+  cursor: pointer;
+}
+
+.menu div {
+  width: 25px;
+  height: 2px;
+  margin: 6px 0;
+  background-color: var(--dark-gray);
+}
+
+@media only screen and (max-width: 991px) {
+  button,
+  .search {
+    display: none;
+  }
+
+  .menu,
+  .fas-search-dark {
+    display: block;
+  }
+
+  .nav-links {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 8vh;
+    height: 92vh;
+    width: 300px;
+    background-color: white;
+    z-index: 99;
+    padding: 0 3.2rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-link-container {
+    padding: 1rem 0 !important;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .nav-link-save {
+    display: none;
+  }
+}
+
+.nav-open {
+  transform: translateX(0%);
 }
