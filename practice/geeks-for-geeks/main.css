@@ -132,7 +132,7 @@ button {
   height: 30px;
 }
 .menu,
-.fas-search-dark {
+i.fas-search-dark {
   display: none;
   cursor: pointer;
 }
@@ -152,7 +152,7 @@ button {
   }
 
   .menu,
-  .fas-search-dark {
+  i.fas-search-dark {
     display: block;
   }
 
