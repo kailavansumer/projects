@@ -183,7 +183,6 @@ i.fas-search-dark {
 .nav-open {
   left: 0;
   transition: left 0.3s ease-in;
-  box-shadow: 15px 0 10px -10px #1e204b2b;
 }
 
 .line1.open {
