@@ -9,6 +9,8 @@
 html {
   font-family: "Noto Sans", sans-serif;
   font-size: 10px;
+  color: var(--dark-gray);
+  font-weight: bold;
 
   /* Colors */
   --dark-gray: #27323a;
@@ -24,6 +26,10 @@ a {
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--dark-gray);
+}
+.fas {
+  font-size: 1.4rem;
+  padding-top: 0.2rem;
 }
 .navbar {
   background-color: white;
@@ -62,9 +68,35 @@ a {
 .fa-bookmark {
   padding-right: 0.8rem;
 }
+.search-bar {
+  position: relative;
+  margin-right: 2rem;
+}
 
 input {
-  padding: 10px 5px;
+  padding: 1rem 0.8rem;
   border: solid 1.5px var(--light-gray);
-  border-radius: 10px;
+  border-radius: 0.9rem;
+}
+
+.fa-search {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  padding: 1.2rem;
+  border-top-right-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  vertical-align: middle;
+  color: white;
+  background-color: var(--dark-gray);
+}
+
+button {
+  background-color: var(--dark-gray);
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: 0.1rem solid var(--dark-gray);
+  border-radius: 0.9rem;
 }
