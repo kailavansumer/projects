@@ -21,6 +21,7 @@ html {
 
 body {
   background-color: var(--paper-gray);
+  transition: all 0.3s;
 }
 
 a {
@@ -153,15 +154,14 @@ button {
   .nav-links {
     display: block;
     position: fixed;
-    left: 0px;
-    top: 8vh;
-    height: 92vh;
+    left: -300px;
+    top: 110px;
+    height: 100vh;
     width: 300px;
     background-color: white;
-    z-index: 99;
+    z-index: 1;
     padding: 0 3.2rem;
-    transform: translateX(-100%);
-    transition: all 0.5s ease-in;
+    transition: left 0.3s ease-in;
   }
 
   .nav-link-container {
@@ -176,5 +176,11 @@ button {
 }
 
 .nav-open {
-  transform: translateX(0%);
+  left: 0;
+  transition: left 0.3s ease-in;
+  box-shadow: 15px 0 10px -10px #1e204b2b;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
 }
