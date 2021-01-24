@@ -127,6 +127,10 @@ button {
   cursor: pointer;
 }
 
+.menu {
+  width: 30px;
+  height: 30px;
+}
 .menu,
 .fas-search-dark {
   display: none;
@@ -138,6 +142,7 @@ button {
   height: 2px;
   margin: 6px 0;
   background-color: var(--dark-gray);
+  transition: all 0.2s;
 }
 
 @media only screen and (max-width: 991px) {
@@ -181,6 +186,20 @@ button {
   box-shadow: 15px 0 10px -10px #1e204b2b;
 }
 
+.line1.open {
+  transform: rotate(45deg);
+}
+.line2.open {
+  display: none;
+}
+.line3.open {
+  transform: rotate(-45deg);
+}
+
+.menu div.open {
+  position: absolute;
+  top: 21px;
+}
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
