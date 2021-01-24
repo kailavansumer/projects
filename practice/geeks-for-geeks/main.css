@@ -6,15 +6,65 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: "Noto Sans", sans-serif;
   font-size: 10px;
 
   /* Colors */
-  --dark-gray: #444;
+  --dark-gray: #27323a;
+  --light-gray: #ebebeb;
+  --paper-gray: #fafafa;
+}
+
+body {
+  background-color: var(--paper-gray);
 }
 
 a {
+  font-size: 1.6rem;
   text-decoration: none;
   color: var(--dark-gray);
+}
+.navbar {
+  background-color: white;
+}
+
+.bottom-nav {
+  position: sticky;
+  width: 100%;
+  box-shadow: 0 15px 10px -15px #1e204b2b;
+}
+.top-nav,
+.bottom-nav,
+.nav-links,
+.nav-link-container,
+.search,
+.articles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav,
+.bottom-nav {
+  padding: 1rem 3rem;
+}
+.top-nav {
+  border-bottom: solid 0.1rem var(--light-gray);
+}
+
+.nav-link-container,
+.articles {
+  padding: 0.8rem;
+}
+
+.nav-link,
+.fa-newspaper,
+.fa-bookmark {
+  padding-right: 0.8rem;
+}
+
+input {
+  padding: 10px 5px;
+  border: solid 1.5px var(--light-gray);
+  border-radius: 10px;
 }

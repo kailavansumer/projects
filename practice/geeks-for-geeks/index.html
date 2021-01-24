@@ -5,24 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://kit.fontawesome.com/d28729f138.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="top-nav">
           <div class="nav-links">
-            <a href="#" class="nav-link"
-              >Tutorials<i class="fas fa-chevron-down"></i
-            ></a>
-            <a href="#" class="nav-link"
-              >Student<i class="fas fa-chevron-down"></i
-            ></a>
-            <a href="#" class="nav-link"
-              >Jobs<i class="fas fa-chevron-down"></i
-            ></a>
-            <a href="#" class="nav-link">Courses</a>
+            <div class="nav-link-container">
+              <a href="#" class="nav-link">Tutorials</a
+              ><i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="nav-link-container">
+              <a href="#" class="nav-link">Student</a
+              ><i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="nav-link-container">
+              <a href="#" class="nav-link">Jobs</a
+              ><i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="nav-link-container">
+              <a href="#" class="nav-link">Courses</a>
+            </div>
           </div>
-          <a href="#"><img src="./img/g4glogo.png" alt="logo" /></a>
+          <a href="#"><img src="../img/g4glogo.png" alt="logo" /></a>
           <div class="search">
             <div class="search-bar">
               <input type="text" placeholder="Search..." />
@@ -32,12 +41,14 @@
           </div>
         </div>
         <div class="bottom-nav">
-          <div class="articles articles__related">
-            <i class="fas fa-copy"></i><a href="#">Related Articles</a
+          <div class="nav-link-container">
+            <i class="fas fa-newspaper"></i
+            ><a href="#" class="nav-link">Related Articles</a
             ><i class="fas fa-chevron-right"></i>
           </div>
-          <div class="articles articles__save">
-            <i class="fas fa-bookmark"></i><a href="#">Save for later</a>
+          <div class="nav-link-container">
+            <i class="fas fa-bookmark"></i
+            ><a href="#" class="nav-link">Save for later</a>
           </div>
         </div>
       </nav>
