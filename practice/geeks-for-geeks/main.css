@@ -16,6 +16,7 @@ html {
   --dark-gray: #27323a;
   --light-gray: #ebebeb;
   --paper-gray: #fafafa;
+  --green: #2f8c46;
 }
 
 body {
@@ -23,12 +24,21 @@ body {
 }
 
 a {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: var(--dark-gray);
 }
-.fas {
+span {
   font-size: 1.4rem;
+}
+
+.nav-link-container:hover {
+  color: var(--green);
+  cursor: pointer;
+}
+
+.fas {
+  font-size: 1.6rem;
   padding-top: 0.2rem;
 }
 .navbar {
@@ -44,23 +54,27 @@ a {
 .bottom-nav,
 .nav-links,
 .nav-link-container,
+.bottom-nav-link-container,
 .search,
 .articles {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.top-nav,
-.bottom-nav {
-  padding: 1rem 3rem;
-}
+
 .top-nav {
+  padding: 0.7rem 3.2rem;
   border-bottom: solid 0.1rem var(--light-gray);
 }
 
+.bottom-nav {
+  padding: 0.5rem 3.2rem;
+}
+
 .nav-link-container,
-.articles {
-  padding: 0.8rem;
+.articles,
+.bottom-nav-link-container {
+  padding: 1rem 2.6rem 1rem 0;
 }
 
 .nav-link,
@@ -74,9 +88,18 @@ a {
 }
 
 input {
-  padding: 1rem 0.8rem;
+  padding: 1.1rem 1.5rem;
   border: solid 1.5px var(--light-gray);
   border-radius: 0.9rem;
+  min-width: 20rem;
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+}
+
+input:focus {
+  outline: none;
 }
 
 .fa-search {
@@ -85,8 +108,8 @@ input {
   top: 50%;
   transform: translate(-100%, -50%);
   padding: 1.2rem;
-  border-top-right-radius: 0.9rem;
-  border-bottom-right-radius: 0.9rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   vertical-align: middle;
   color: white;
   background-color: var(--dark-gray);
@@ -96,7 +119,8 @@ button {
   background-color: var(--dark-gray);
   color: white;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 1.1rem 2.5rem;
   border: 0.1rem solid var(--dark-gray);
-  border-radius: 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
