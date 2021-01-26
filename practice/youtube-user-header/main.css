@@ -24,7 +24,7 @@ header {
 }
 
 .container {
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   font-size: 1.4rem;
 }
@@ -68,7 +68,7 @@ i {
 
 .nav {
   list-style: none;
-  width: 55%;
+  max-width: 55%;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 1.4rem;
@@ -83,8 +83,11 @@ i {
   color: var(--light-gray);
   display: inline-block;
   padding: 1.8rem 2rem;
-  border-bottom: 6px solid transparent;
-  transition: all 0.2s ease-in;
+  background-image: linear-gradient(var(--light-gray), var(--light-gray));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0px;
+  transition: background-size 0.3s;
 }
 
 .nav-link:hover {
@@ -93,7 +96,7 @@ i {
 }
 .border {
   color: white;
-  border-bottom: 6px solid var(--light-gray);
+  background-size: 100% 4px;
 }
 button {
   padding: 01rem 1.6rem;
