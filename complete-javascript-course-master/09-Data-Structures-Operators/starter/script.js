@@ -234,3 +234,15 @@ console.log(createScorer(game.scored));
 // add that player and the amount of goals to the object
 
 // Sets
+const orderSet = new Set([
+  'Pizza',
+  'Pasta',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+
+console.log(orderSet);
+console.log(orderSet.size);
+console.log(orderSet.has('Pizza'));
