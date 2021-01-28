@@ -136,7 +136,7 @@ printGoals(...game.scored);
 const winner = team1 < team2 || 'Team 2 wins!';
 console.log(winner);
 */
-
+/*
 // Coding Challenge #2
 const game = {
   team1: 'Bayern Munich',
@@ -246,3 +246,45 @@ const orderSet = new Set([
 console.log(orderSet);
 console.log(orderSet.size);
 console.log(orderSet.has('Pizza'));
+*/
+
+// Coding Challenge #3
+const gameEvents = new Map([
+  [17, '⚽ GOAL'],
+  [36, '🔁 Substitution'],
+  [47, '⚽ GOAL'],
+  [61, '🔁 Substitution'],
+  [64, '🔶 Yellow card'],
+  [69, '🔴 Red card'],
+  [70, '🔁 Substitution'],
+  [72, '🔁 Substitution'],
+  [76, '⚽ GOAL'],
+  [80, '⚽ GOAL'],
+  [92, '🔶 Yellow card'],
+]);
+
+// Create an array of the events that happened in the game without any duplicates
+/*const events = [];
+for (const [key, value] of [...gameEvents]) {
+  events.push(value);
+}
+let uniqueEvents = new Set(events);
+uniqueEvents = [...uniqueEvents];
+*/
+// Refactored using map.values()
+const events = [...new Set(gameEvents.values())];
+
+// Remove illegal event from game events log
+gameEvents.delete(64);
+
+// Print sentence using average of events
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes.`
+);
+
+// Loop over gameEvents and log each element noting whether it was in the first half of the game or the second
+
+for (const [min, event] of gameEvents) {
+  const half = min <= 45 ? 'FIRST' : 'SECOND';
+  console.log(`[${half} HALF]${min}: ${event}`);
+}
