@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  background-color: #2a303b;
+  height: 5vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.main {
+  background-color: white;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: thistle;
+  height: 100vh;
+}
