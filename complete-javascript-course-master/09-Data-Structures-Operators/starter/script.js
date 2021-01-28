@@ -247,7 +247,7 @@ console.log(orderSet);
 console.log(orderSet.size);
 console.log(orderSet.has('Pizza'));
 */
-
+/*
 // Coding Challenge #3
 const gameEvents = new Map([
   [17, '⚽ GOAL'],
@@ -264,13 +264,14 @@ const gameEvents = new Map([
 ]);
 
 // Create an array of the events that happened in the game without any duplicates
-/*const events = [];
+/*
+const events = [];
 for (const [key, value] of [...gameEvents]) {
   events.push(value);
 }
 let uniqueEvents = new Set(events);
 uniqueEvents = [...uniqueEvents];
-*/
+
 // Refactored using map.values()
 const events = [...new Set(gameEvents.values())];
 
@@ -288,3 +289,43 @@ for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half} HALF]${min}: ${event}`);
 }
+*/
+
+/*
+
+// CS50 Print a reverse pyramid
+//  #
+// ##
+//###
+// I freaking solved it! Woohoo! Solved 1/27/21 after ~3 hours of working on it
+
+// Print a pyramid given a height
+let str = '';
+const printPyramid = height => {
+  for (let i = 0; i < height; i++) {
+    str = str + '#';
+    console.log(str);
+  }
+};
+printPyramid(3);
+
+// Print a reverse pyramid given a height
+let newStr = '';
+let i;
+let j;
+const reversePyramid = height => {
+  for (i = height - 1; i >= 0; i--) {
+    for (j = 0; j < height; j++) {
+      if (j < i) {
+        newStr += ' ';
+      } else {
+        newStr += '#';
+      }
+    }
+    console.log(newStr);
+    newStr = '';
+  }
+};
+
+reversePyramid(5);
+*/
