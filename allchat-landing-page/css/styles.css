@@ -171,6 +171,7 @@ header {
   width: 100%;
   top: 0;
   padding: 17px 0;
+  z-index: 2;
 }
 .nav {
   display: flex;
@@ -343,6 +344,51 @@ button,
 }
 .section__column--left {
   padding: 150px 0 0 100px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.column {
+  background-color: white;
+  font-size: 1.6rem;
+  padding: 40px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px 10px rgba(177, 177, 177, 0.1);
+  z-index: 0;
+}
+.column--premium {
+  margin: 0;
+  z-index: 1;
+}
+
+.column__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 15px 0;
+}
+.column__price span {
+  font-size: 3.8rem;
+  color: rgba(43, 187, 162, 1);
+  font-weight: 700;
+}
+.column__features {
+  padding: 30px;
+}
+
+.column__feature {
+  padding: 10px 0;
+}
+
+.column__feature span {
+  font-weight: 700;
 }
 .section__form,
 .section__div--top-pad {
