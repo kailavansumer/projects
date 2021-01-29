@@ -334,17 +334,24 @@ reversePyramid(5);
 document.body.append(document.createElement('textarea'));
 document.body.append(document.createElement('button'));
 
-const makeCamel = str => {
-  let capital = str.indexOf('_') + 1;
-  let newStr =
-    str.toLowerCase().slice(0, str.indexOf('_')) +
-    str[capital].toUpperCase() +
-    str.slice(str.indexOf('_') + 2, str.length);
-  console.log(newStr);
-};
+let button = document.querySelector('button');
 
-let someStr = ' Some_Variable';
-makeCamel(someStr);
+button.addEventListener('click', () => {
+  let text = document.querySelector('textarea').value;
+  let arr = text.split('\n');
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    let newStr = arr[i].toLowerCase().replaceAll(' ', '');
+    let firstPart = newStr.slice(0, newStr.indexOf('_'));
+    let capital = newStr[newStr.indexOf('_') + 1].toUpperCase();
+    let lastPart = newStr.slice(newStr.indexOf('_') + 2, newStr.length);
+    console.log(firstPart + capital + lastPart);
+  }
+});
 
-// .toLowerCase()
-//     .toUpperCase[str.indexOf('_' + 1)].replace('_', '');
+// let capital = str[i].indexOf('_');
+// let newStr =
+//   str.toLowerCase().slice(0, capital) +
+//   str[capital + 1].toUpperCase() +
+//   str.slice(capital + 2, str.length);
+// console.log(newStr.replaceAll(' ', ''));
