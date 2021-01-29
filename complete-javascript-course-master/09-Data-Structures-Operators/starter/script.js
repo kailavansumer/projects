@@ -339,13 +339,14 @@ let button = document.querySelector('button');
 button.addEventListener('click', () => {
   let text = document.querySelector('textarea').value;
   let arr = text.split('\n');
-  console.log(arr);
+  let emoji = '✅';
   for (let i = 0; i < arr.length; i++) {
     let newStr = arr[i].toLowerCase().replaceAll(' ', '');
     let firstPart = newStr.slice(0, newStr.indexOf('_'));
     let capital = newStr[newStr.indexOf('_') + 1].toUpperCase();
     let lastPart = newStr.slice(newStr.indexOf('_') + 2, newStr.length);
-    console.log(firstPart + capital + lastPart);
+    console.log(firstPart + capital + lastPart + emoji);
+    emoji = emoji + '✅';
   }
 });
 
