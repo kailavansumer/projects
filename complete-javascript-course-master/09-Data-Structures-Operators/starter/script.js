@@ -345,7 +345,8 @@ button.addEventListener('click', () => {
     let firstPart = newStr.slice(0, newStr.indexOf('_'));
     let capital = newStr[newStr.indexOf('_') + 1].toUpperCase();
     let lastPart = newStr.slice(newStr.indexOf('_') + 2, newStr.length);
-    console.log(firstPart + capital + lastPart + emoji);
+    let finalStr = firstPart + capital + lastPart;
+    console.log(finalStr.padEnd(20, ' ') + emoji);
     emoji = emoji + '✅';
   }
 });
