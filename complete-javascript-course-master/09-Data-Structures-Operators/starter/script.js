@@ -329,3 +329,22 @@ const reversePyramid = height => {
 
 reversePyramid(5);
 */
+
+// Coding Challenge #4
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+const makeCamel = str => {
+  let capital = str.indexOf('_') + 1;
+  let newStr =
+    str.toLowerCase().slice(0, str.indexOf('_')) +
+    str[capital].toUpperCase() +
+    str.slice(str.indexOf('_') + 2, str.length);
+  console.log(newStr);
+};
+
+let someStr = ' Some_Variable';
+makeCamel(someStr);
+
+// .toLowerCase()
+//     .toUpperCase[str.indexOf('_' + 1)].replace('_', '');
