@@ -26,10 +26,15 @@ const poll = {
   // This generates [0, 0, 0, 0]. More in the next section!
   answers: new Array(4).fill(0),
   registerNewAnswer: function () {
+    let userInput;
     document.querySelector('.poll').addEventListener('click', () => {
-      prompt(`${this.question}\n${printNewLine(this.options)}`);
-    });
-  }, //end of function
+      userInput = prompt(`${this.question}\n${printNewLine(this.options)}`);
+      if (userInput >= 0 && userInput <= 3) {
+        this.answers[userInput] += 1;
+        console.log(this.answers);
+      }
+    }); //end of click event
+  }, //end of registerNewAnserfunction
 }; //end of object poll
 
 poll.registerNewAnswer();
