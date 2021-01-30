@@ -13,36 +13,36 @@ const addTax = function (rate) {
 };
 */
 
-// Print the options for the user on their own line
-const printNewLine = arr => {
-  for (const items of arr) {
-    return `${arr.join('\n')}\n(Write option number)`;
-  }
-};
-
 const poll = {
   question: 'What is your favourite programming language?',
   options: ['0: JavaScript', '1: Python', '2: Rust', '3: C++'],
   // This generates [0, 0, 0, 0]. More in the next section!
   answers: new Array(4).fill(0),
-  registerNewAnswer: function () {
-    let userInput;
-    document.querySelector('.poll').addEventListener('click', () => {
-      userInput = prompt(`${this.question}\n${printNewLine(this.options)}`);
-      if (userInput >= 0 && userInput <= 3) {
-        this.answers[userInput] += 1;
-        console.log(this.answers);
-      }
-    });
-  }, //end of registerNewAnserfunction
-  displayResults: function (type) {
-    if (typeof type == 'array') {
-      console.log(type);
-    } else {
-      let cleanStr = type.replaceAll('[', '').replaceAll(']', '');
-      console.log(`Poll results are ${cleanStr}`);
+  registerNewAnswer() {
+    const answer = Number(
+      prompt(
+        `${this.question}\n${this.options.join('\n')}\n(Write option number)`
+      )
+    );
+    console.log(answer);
+
+    typeof answer === 'number' &&
+      answer < this.options.length &&
+      this.answers[answer]++;
+    this.displayResults();
+    this.displayResults('string');
+  },
+  displayResults(type = 'array') {
+    if (type === 'array') {
+      console.log(this.answers);
+    } else if (type === 'string') {
+      console.log(`Poll results is ${this.answers.join(', ')}`);
     }
   },
-}; //end of object poll
+};
 
 poll.registerNewAnswer();
+
+document
+  .querySelector('.poll')
+  .addEventListener('click', poll.registerNewAnswer.bind(poll));
