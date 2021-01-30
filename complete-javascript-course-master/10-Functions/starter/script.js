@@ -33,8 +33,16 @@ const poll = {
         this.answers[userInput] += 1;
         console.log(this.answers);
       }
-    }); //end of click event
+    });
   }, //end of registerNewAnserfunction
+  displayResults: function (type) {
+    if (typeof type == 'array') {
+      console.log(type);
+    } else {
+      let cleanStr = type.replaceAll('[', '').replaceAll(']', '');
+      console.log(`Poll results are ${cleanStr}`);
+    }
+  },
 }; //end of object poll
 
 poll.registerNewAnswer();
