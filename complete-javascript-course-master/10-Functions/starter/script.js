@@ -1,4 +1,5 @@
 'use strict';
+
 /*
 const createBooking = function (flightNum, numPassengers, price) {
   const booking = {
@@ -11,7 +12,7 @@ const addTax = function (rate) {
     return value + value * rate;
   };
 };
-*/
+
 
 const poll = {
   question: 'What is your favourite programming language?',
@@ -46,3 +47,16 @@ poll.registerNewAnswer();
 document
   .querySelector('.poll')
   .addEventListener('click', poll.registerNewAnswer.bind(poll));
+
+  */
+
+// Coding Challenge #2
+
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+
+  document
+    .querySelector('body')
+    .addEventListener('click', () => (header.style.color = 'blue'));
+})();
