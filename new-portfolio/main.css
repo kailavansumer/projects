@@ -14,6 +14,7 @@ html {
   /* Colors */
   --dark-gray: #333333;
   --blue: #00e4f2;
+  --light-gray: #e6e9e9;
 }
 body {
   padding: 20px;
@@ -51,6 +52,9 @@ nav ul li {
   padding: 10px;
 }
 
+.navbar a {
+  display: flex;
+}
 .menu-icon div {
   background-color: var(--dark-gray);
   border-radius: 100;
@@ -70,25 +74,26 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
-  margin-top: 60px;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  margin-bottom: 30px;
 }
 h2 {
-  font-size: 4.2rem;
-  margin-bottom: 20px;
+  font-size: 3rem;
 }
 
 h3 {
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 h4 {
   text-transform: uppercase;
-  margin: 20px 0 5px;
+  margin: 20px 0 0;
+}
+
+.hero {
+  margin-top: 100px;
 }
 .hero p {
-  padding-right: 40px;
+  padding-right: 70px;
 }
 .hero a {
   font-weight: 300;
@@ -96,18 +101,26 @@ h4 {
   text-decoration: underline;
 }
 
-a.btn {
+a.btn,
+button.btn {
   display: inline-block;
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 1.6rem;
+  border: none;
   text-decoration: none;
   border-radius: 4px;
   color: white;
   background-color: var(--dark-gray);
   padding: 14px 28px;
-  margin-top: 45px;
+  margin-top: 30px;
   font-weight: 300;
 }
 
-main {
+button.btn {
+  margin: 0;
+}
+
+section {
   margin-top: 100px;
 }
 .project {
@@ -130,6 +143,64 @@ p {
   letter-spacing: -1px;
   font-weight: 300;
   padding: 10px 0;
+}
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 300;
+  margin: 15px 0 0;
+}
+input {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  padding: 15px 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  min-height: 200px;
+  padding: 15px 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--light-gray);
+  font-family: "Source Code Pro", sans-serif;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+footer {
+  margin: 60px 0 30px;
+  text-align: center;
+}
+
+.footer-links {
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: var(--blue);
+  font-weight: 300;
+  text-decoration: underline;
+}
+p.copyright {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 5px 0;
 }
 
 @media only screen and (max-width: 600px) {
