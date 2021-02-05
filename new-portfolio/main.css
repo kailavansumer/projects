@@ -129,6 +129,7 @@ main {
 p {
   letter-spacing: -1px;
   font-weight: 300;
+  padding: 10px 0;
 }
 
 @media only screen and (max-width: 600px) {
