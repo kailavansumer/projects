@@ -1,5 +1,5 @@
 const navSlide = () => {
-  const menu = document.querySelector(".menu");
+  const menu = document.querySelector(".menu-icon");
   const nav = document.querySelector(".nav-links");
   const body = document.querySelector("body");
   const line1 = document.querySelector(".line1");
