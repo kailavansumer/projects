@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -22,6 +23,7 @@
 /*******************************************/
 
 body {
+  font-family: "Lato", sans-serif;
 }
 
 /******************************************
@@ -46,6 +48,11 @@ img {
   width: 100%;
 }
 
+.logo {
+  height: 50px;
+  width: auto;
+}
+
 nav {
   height: 50px;
   vertical-align: middle;
@@ -54,6 +61,11 @@ nav {
 div {
   float: left;
   width: 33.333%;
+  text-align: center;
+}
+
+div:nth-child(1) {
+  padding: 13px 0;
 }
 
 nav > div > * {
@@ -62,14 +74,19 @@ nav > div > * {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 ul > li {
   float: left;
-  width: 33.3333%;
 }
 
 main > * {
   float: left;
   width: 50%;
+}
+
+.nav-link {
+  font-weight: 800;
+  text-decoration: none;
 }
